@@ -146,19 +146,19 @@ class Server_Api():
                     self.logger.debug("用户选择了上传证书至CAS功能！User selected the Upload Certificate to CAS function!\n即将执行upload_cas()函数！About to execute the upload_cas() function!")
                     self.logger.warning("该功能无法直接调用！否则会报错！This function cannot be called directly! Otherwise, it will report an error!")
                     self.Remove_Security_Group()
-                elif Choice == "4":
+                elif Choice == "5":
                     self.logger.debug("用户选择了获取所有CDN域名功能！User selected the Get All CDN Domains function!\n即将执行get_cdn_domain()函数！About to execute the get_cdn_domain() function!")
                     self.upload_cas()
-                elif Choice == "5":
+                elif Choice == "6":
                     self.logger.debug("用户选择了同步CAS证书至CDN功能！User selected the Sync CAS Certificate to CDN function!\n即将执行Set_Cdn_Domain_SSL_Certificate()函数！About to execute the Set_Cdn_Domain_SSL_Certificate() function!")
                     self.get_cdn_domain()
-                elif Choice == "6":
+                elif Choice == "7":
                     self.logger.debug("用户选择了设置CDN域名SSL证书功能！User selected the Set CDN Domain SSL Certificate function!\n即将执行Set_Cdn_Domain_SSL_Certificate()函数！About to execute the Set_Cdn_Domain_SSL_Certificate() function!")
                     self.Set_Cdn_Domain_SSL_Certificate()
-                elif Choice == "7":
+                elif Choice == "8":
                     self.logger.debug("用户选择了发送邮件功能！User selected the Send Email function!\n即将执行sent_email()函数！About to execute the sent_email() function!")
                     self.sent_email(Receiver = "l.k.shi520@gmail.com")
-                elif Choice == "8":
+                elif Choice == "9":
                     self.logger.debug("用户选择了退出功能！User selected the Exit function!\n即将退出！About to exit!")
                     break
                 else:
